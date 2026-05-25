@@ -965,5 +965,85 @@ function renderCloaks(){
 
 renderCloaks();
 </script>
+<!-- SUMMER BREAK ANNOUNCEMENT -->
+<div id="summerPopup" class="overlay">
+  <div class="popup-box glass">
+    
+    <span class="close-x" id="summerClose">&times;</span>
+
+    <h2 style="
+      font-size:28px;
+      margin-bottom:15px;
+      background:linear-gradient(135deg,#4fd1ff,#b47cff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    ">
+      🌴 Summer Break Notice
+    </h2>
+
+    <p style="
+      font-size:16px;
+      line-height:1.6;
+      color:rgba(255,255,255,0.9);
+    ">
+      Before you go on summer break...
+      <br><br>
+      Make sure to save these Pixel Portal backup links so that you can still enjoy your favorite games even when the main one gets blocked!
+    </p>
+
+    <div style="
+      margin-top:20px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    ">
+
+      <a href="https://zachristian7-dotcom.github.io/pixel-portal2" target="_blank">
+        <button class="action-btn" style="width:100%;">
+          zachristian7-dotcom.github.io/pixel-portal2
+        </button>
+      </a>
+
+      <a href="https://zachristian7-dotcom.github.io/pixel-portal3" target="_blank">
+        <button class="action-btn" style="width:100%;">
+          zachristian7-dotcom.github.io/pixel-portal3
+        </button>
+      </a>
+
+    </div>
+
+    <button class="close-btn" id="summerContinue">
+      Continue to Pixel Portal
+    </button>
+
+  </div>
+</div>
+
+<script>
+const summerPopup = document.getElementById("summerPopup");
+const summerClose = document.getElementById("summerClose");
+const summerContinue = document.getElementById("summerContinue");
+
+// Show popup on page load
+window.addEventListener("load", () => {
+  summerPopup.style.display = "flex";
+});
+
+// Close popup
+summerClose.onclick = () => {
+  summerPopup.style.display = "none";
+};
+
+summerContinue.onclick = () => {
+  summerPopup.style.display = "none";
+};
+
+// Close when clicking outside
+window.addEventListener("click", (e) => {
+  if (e.target === summerPopup) {
+    summerPopup.style.display = "none";
+  }
+});
+</script>
 </body>
 </html>
