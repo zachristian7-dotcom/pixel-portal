@@ -866,6 +866,14 @@ const games = [
     "categories": ["Arcade", "Classics"],
     "added": "2026-05-25",
     "new": true
+  },
+  { name: "PolyTrack",
+    id: "polytrack",
+    thumbnail: "polytrack.png",
+    description: "Drive your car around various tracks and try to get the high score!",
+    categories: ["Racing", "Arcade"],
+    added: "2026-05-27",
+    new: true
   }
 ];
 
