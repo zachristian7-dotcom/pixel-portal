@@ -460,7 +460,7 @@ const games = [
     "description": "Scoop ice cream and bake cookies in Papa's Scooperia!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Hot Doggeria",
@@ -469,7 +469,6 @@ const games = [
     "description": "Serve up hot dogs and stadium snacks at the ballpark!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
   },
   {
     "name": "Papa's Freezeria",
@@ -478,7 +477,7 @@ const games = [
     "description": "Mix and serve delicious freezer treats on Calypso Island!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Cupcakeria",
@@ -487,7 +486,7 @@ const games = [
     "description": "Bake and decorate perfect cupcakes for hungry customers!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Burgeria",
@@ -496,7 +495,7 @@ const games = [
     "description": "Flip patties and build custom burgers in the original burger joint!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Donuteria",
@@ -505,7 +504,7 @@ const games = [
     "description": "Fry and frost a dizzying variety of donuts for crazy customers!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Bakeria",
@@ -514,7 +513,7 @@ const games = [
     "description": "Bake mouth-watering pies in the Whiskview Mall!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Dandy's World Clicker",
@@ -523,7 +522,7 @@ const games = [
     "description": "Click your way to victory in this Dandy's World inspired clicker game!",
     "categories": ["Clicker", "Casual"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Clash of Vikings",
@@ -532,7 +531,7 @@ const games = [
     "description": "Deploy your troops and destroy the enemy towers in this battle strategy game.",
     "categories": ["Strategy", "Action"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Steal a Brainrot",
@@ -541,7 +540,7 @@ const games = [
     "description": "Navigate through internet meme chaos in this bizarre and comedic adventure!",
     "categories": ["Funny", "Meme", "Adventure"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Age of War",
@@ -550,7 +549,7 @@ const games = [
     "description": "Defend your base and evolve your army through the ages from cavemen to future tech!",
     "categories": ["Strategy", "Defense"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Choppy Orc",
@@ -559,7 +558,7 @@ const games = [
     "description": "Use your magical axe to jump, solve puzzles, and rescue your friends!",
     "categories": ["Platformer", "Puzzle"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Minecraft Case Simulator",
@@ -568,7 +567,7 @@ const games = [
     "description": "Test your luck opening virtual cases to see if you can pull rare items!",
     "categories": ["Simulator", "Casual"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Blackjack",
@@ -577,7 +576,7 @@ const games = [
     "description": "Try your hand at the classic card game and try to hit 21 without going bust.",
     "categories": ["Cards", "Casino"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "8 Ball Pool",
@@ -586,7 +585,7 @@ const games = [
     "description": "Chalk up your cue and sink all your solid or striped balls to win!",
     "categories": ["Sports", "Casual"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Jetpack Joyride",
@@ -595,7 +594,7 @@ const games = [
     "description": "Suit up with a selection of cool jetpacks and test your reflexes in an endless lab run!",
     "categories": ["Endless", "Arcade"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Hollow Knight",
@@ -604,7 +603,7 @@ const games = [
     "description": "Explore a vast, ruined kingdom of insects and heroes in this miniature adventure.",
     "categories": ["Action", "Platformer"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Getting Over It",
@@ -613,7 +612,7 @@ const games = [
     "description": "Climb a massive mountain with nothing but a hammer and a pot in this punishing physics game.",
     "categories": ["Physics", "Rage"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Doodle Jump",
@@ -622,7 +621,7 @@ const games = [
     "description": "Bounce your way up to the stars while dodging monsters and black holes!",
     "categories": ["Arcade", "Endless"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Doge Miner",
@@ -631,7 +630,7 @@ const games = [
     "description": "Mine vast amounts of Dogecoin and fund your trip to the moon!",
     "categories": ["Clicker", "Idle"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Cut the Rope",
@@ -640,7 +639,7 @@ const games = [
     "description": "Cut ropes, pop bubbles, and collect stars to feed candy to Om Nom!",
     "categories": ["Puzzle", "Physics"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Uno",
@@ -649,7 +648,7 @@ const games = [
     "description": "Match colors and numbers to empty your hand before anyone else!",
     "categories": ["Cards", "Casual"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Undertale Last Breath",
@@ -658,7 +657,7 @@ const games = [
     "description": "Test your dodging skills against legendary Undertale boss mechanics!",
     "categories": ["Action", "Arcade"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Trivia Crack",
@@ -667,7 +666,7 @@ const games = [
     "description": "Put your knowledge to the test across six different trivia categories!",
     "categories": ["Trivia", "Puzzle"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Taco Mia!",
@@ -676,7 +675,7 @@ const games = [
     "description": "Take orders, grill meats, and build custom tacos to please your customers!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "StrikeForce Kitty",
@@ -685,7 +684,7 @@ const games = [
     "description": "Lead a squad of adorable kittens to rescue the princess from the evil foxes!",
     "categories": ["Strategy", "RPG", "Action"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Retro Bowl",
@@ -694,7 +693,7 @@ const games = [
     "description": "Manage your roster and call the plays on offense in this retro-styled football game.",
     "categories": ["Sports", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Pizzeria",
@@ -703,7 +702,7 @@ const games = [
     "description": "Topping, baking, and cutting pizzas for a fast-paced kitchen rush!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Wingeria",
@@ -712,7 +711,7 @@ const games = [
     "description": "Toss chicken wings in signature sauces and arrange them perfectly!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "WorldGuessr",
@@ -721,7 +720,7 @@ const games = [
     "description": "Look around and use geographic clues to guess where you are in the world!",
     "categories": ["Geography", "Puzzle"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Temple Run 2",
@@ -730,7 +729,7 @@ const games = [
     "description": "Navigate perilous cliffs, zip lines, mines and forests as you escape with the cursed idol!",
     "categories": ["Endless", "Action"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Henry Stickmin 3: Stealing the Diamond",
@@ -739,7 +738,7 @@ const games = [
     "description": "Choose your choices carefully to pull off the ultimate diamond heist!",
     "categories": ["Adventure", "Funny"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Henry Stickmin 2: Escaping the Prison",
@@ -748,7 +747,7 @@ const games = [
     "description": "Use unique tools and questionable logic to break out of your jail cell!",
     "categories": ["Adventure", "Funny"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Henry Stickmin 1: Breaking the Bank",
@@ -757,7 +756,7 @@ const games = [
     "description": "The classic game where it all started. Find a way into the vault!",
     "categories": ["Adventure", "Funny"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Solitaire",
@@ -766,7 +765,7 @@ const games = [
     "description": "Arrange cards in descending order and alternating colors to clear the board.",
     "categories": ["Cards", "Casual"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Slope 3",
@@ -775,7 +774,7 @@ const games = [
     "description": "Keep your ball on the platform while flying down an unpredictable, neon slope!",
     "categories": ["Arcade", "Skill"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Slope 2",
@@ -784,7 +783,7 @@ const games = [
     "description": "The fast-paced sequel with new obstacles and tighter steering control.",
     "categories": ["Arcade", "Skill"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Slope",
@@ -793,7 +792,7 @@ const games = [
     "description": "Drive down the endless neon grid map, dodging red blocks to secure a high score.",
     "categories": ["Arcade", "Skill"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Rocket League",
@@ -802,7 +801,7 @@ const games = [
     "description": "Use booster cars to hit a giant soccer ball into the opponent's net!",
     "categories": ["Sports", "Action"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Texas Hold'em Poker",
@@ -811,7 +810,7 @@ const games = [
     "description": "Bluff, bet, and raise your way to taking down the whole table.",
     "categories": ["Cards", "Casino"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Paper Minecraft",
@@ -820,7 +819,7 @@ const games = [
     "description": "A 2D side-scrolling adaptation of the beloved crafting and survival game.",
     "categories": ["Survival", "Crafting"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Paper.io",
@@ -829,7 +828,7 @@ const games = [
     "description": "Capture as much territory as you can while avoiding getting your tail cut by rivals!",
     "categories": ["IO", "Multiplayer"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Papa's Cheeseria",
@@ -838,7 +837,7 @@ const games = [
     "description": "Craft high-stack grilled cheese sandwiches and fries for hungry customers!",
     "categories": ["Papa's", "Cooking", "Strategy"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Pac-Man",
@@ -847,7 +846,7 @@ const games = [
     "description": "Navigate the maze to eat all the dots while evading Blinky, Pinky, Inky, and Clyde!",
     "categories": ["Arcade", "Retro"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Minesweeper",
@@ -856,7 +855,7 @@ const games = [
     "description": "Use numerical hints to clear the grid without triggering any hidden mines.",
     "categories": ["Puzzle", "Logic"],
     "added": "2026-05-24",
-    "new": true
+    
   },
   {
     "name": "Fruit Ninja",
@@ -865,7 +864,7 @@ const games = [
     "description": "Use your mouse to slice different fruits (but make sure to avoid bombs!)",
     "categories": ["Arcade", "Classics"],
     "added": "2026-05-25",
-    "new": true
+    
   },
   { name: "PolyTrack",
     id: "polytrack",
