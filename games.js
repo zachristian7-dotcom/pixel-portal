@@ -361,7 +361,7 @@ const games = [
     description: "Slice and dice sushi ingredients with precision!",
     categories: ["Arcade", "Action"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Eaglercraft 1.12",
@@ -370,7 +370,7 @@ const games = [
     description: "Explore, build, and survive in a pixelated sandbox world.",
     categories: ["Sandbox", "Adventure"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Wordle",
@@ -379,7 +379,7 @@ const games = [
     description: "Guess the hidden five-letter word in six attempts.",
     categories: ["Puzzle", "Word"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Clover Pit",
@@ -388,7 +388,7 @@ const games = [
     description: "Navigate challenging pits and collect lucky charms.",
     categories: ["Platformer", "Arcade"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Melon Playground",
@@ -397,7 +397,7 @@ const games = [
     description: "Unleash your creativity in a chaotic physics-based sandbox.",
     categories: ["Sandbox", "Simulation"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Level Devil",
@@ -406,7 +406,7 @@ const games = [
     description: "Survive a brutal platformer packed with unexpected trolls.",
     categories: ["Platformer", "Rage Game"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Gorilla Tag",
@@ -415,7 +415,7 @@ const games = [
     description: "Run, climb, and leap using only your arms to tag others.",
     categories: ["Action", "Multiplayer"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Drift Boss",
@@ -424,7 +424,7 @@ const games = [
     description: "Time your drifts perfectly to stay on the endless winding platform.",
     categories: ["Driving", "Arcade"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Crossy Road",
@@ -433,7 +433,7 @@ const games = [
     description: "Cross busy roads, tracks, and rivers without getting hit.",
     categories: ["Arcade", "Endless"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "Angry Birds",
@@ -442,7 +442,7 @@ const games = [
     description: "Launch birds from a slingshot to crush the greedy pigs' defenses.",
     categories: ["Puzzle", "Physics"],
     added: "2026-05-22",
-    new: true
+    
   },
   {
     name: "FNAF",
@@ -451,7 +451,7 @@ const games = [
     description: "Survive 5 nights at Freddy Fasbear's Pizzeria! Disclaimer: this game contains flashing lights, loud noises, and lots of jumpscares!",
     categories: ["FNAF", "Horror"],
     added: "2026-05-23",
-    new: true
+    
   },
 {
     "name": "Papa's Scooperia",
@@ -873,7 +873,7 @@ const games = [
     description: "Drive your car around various tracks and try to get the high score!",
     categories: ["Racing", "Arcade"],
     added: "2026-05-27",
-    new: true
+    
   }
 ];
 
