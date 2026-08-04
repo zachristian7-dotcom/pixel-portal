@@ -222,8 +222,7 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:22px;
 padding:30px;
-max-width:1200px;
-margin:auto;
+max-width:12000px;
 }
 
 /* ---------- GAME CARDS ---------- */
@@ -693,6 +692,148 @@ a {
   text-decoration: none;
 }
 
+.recent-section{
+    max-width:10000px;
+    margin:20px auto;
+    text-align:left;
+}
+
+.recent-section h2{
+    margin-left:30px;
+}
+
+
+#recent-carousel{
+
+    display:flex;
+    gap:18px;
+
+    overflow-x:auto;
+
+    padding:20px 30px;
+
+    scroll-behavior:smooth;
+}
+
+
+#recent-carousel::-webkit-scrollbar{
+    height:8px;
+}
+
+
+.recent-card{
+
+    min-width:220px;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+}
+
+
+.recent-card img{
+
+    width:100%;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+
+.recent-card h3{
+
+    margin:10px 0 5px;
+
+}
+
+
+.recent-card:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+}
+
+.recent-toggle{
+    width:calc(100% - 60px);
+    margin:0 auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px 18px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    color:white;
+
+    cursor:pointer;
+
+    border:none;
+    border-radius:16px;
+
+    background:rgba(255,255,255,.08);
+}
+
+.recent-toggle:hover{
+    background:rgba(255,255,255,.12);
+}
+
+#recentContent{
+    overflow:hidden;
+    max-height:0;
+    opacity:0;
+
+    transition:
+        max-height .35s ease,
+        opacity .25s ease,
+        margin-top .25s ease;
+}
+
+#recentContent.expanded{
+    max-height:500px;
+    opacity:1;
+    margin-top:12px;
+}
+
+.recent-actions{
+    display:flex;
+    justify-content:flex-end;
+    padding:10px 30px 0;
+}
+
+.clear-recent-btn{
+
+    padding:8px 14px;
+
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.25);
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+
+    color:white;
+    font-size:13px;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.clear-recent-btn:hover{
+
+    background:rgba(255,80,80,.25);
+    transform:scale(1.05);
+
+}
 </style>
 </head>
 
@@ -703,7 +844,6 @@ a {
     <span class="pixel">PIXEL</span>
     <span class="portal">PORTAL</span>
   </a>
-  <div class="tagline">HAVE A GREAT SUMMER, SEE YOU NEXT YEAR</div>
 </header>
 
 <div class="controls glass">
@@ -725,12 +865,34 @@ a {
     <button id="gamesBtn" onclick="setView('games')">Games</button>
     <button id="collectionsBtn" onclick="setView('collections')">Collections</button>
   </div>
+   
+</div>
+<section class="recent-section">
+
+  <button id="recentToggle" class="recent-toggle glass">
+    ▸ Recently Played
+  </button>
+<div id="recentContent" class="collapsed">
+
+  <div class="recent-actions">
+    <button class="clear-recent-btn" onclick="clearRecentGames()" title="Clear Recently Played">
+      🗑️
+    </button>
+  </div>
+
+  <div id="recent-carousel"></div>
 
 </div>
+
+</section>
+
+
 <div class="request-tag" onclick="window.location.href='request.html'">
   <div class="request-title">Want to see new games on Pixel Portal?</div>
   <div class="request-subtitle">Click on this tag to request new games!</div>
 </div>
+
+
 <div id="game-list" class="grid"></div>
 
 <div class="bottom-bar glass">
@@ -764,6 +926,56 @@ a {
 </div>
 
 <script src="games.js"></script>
+
+<script>
+
+function renderRecentlyPlayed(){
+
+    const container = document.getElementById("recent-carousel");
+
+    if(!container) return;
+
+    const recent = JSON.parse(localStorage.getItem("recentGames")) || [];
+
+    container.innerHTML = "";
+
+    if(recent.length === 0){
+        container.innerHTML =
+        "<p style='margin-left:30px;opacity:.7;'>Play some games to see them here!</p>";
+        return;
+    }
+
+    recent.forEach(id => {
+
+        const game = games.find(g => g.id === id);
+
+        console.log("Looking for:", id, game);
+
+        if(!game) return;
+
+        const card = document.createElement("div");
+
+        card.className = "recent-card glass";
+
+        card.innerHTML = `
+            <img src="images/${game.thumbnail}">
+            <h3>${game.name}</h3>
+            <p>${game.description}</p>
+        `;
+
+        card.onclick = () => {
+            window.location.href = `play.html?game=${game.id}`;
+        };
+
+        container.appendChild(card);
+
+    });
+
+}
+
+renderRecentlyPlayed();
+
+</script>
 <script>
 const closeBtn = document.getElementById('closeBtn');
 const actionBtn = document.getElementById('actionBtn'); // Target the action button
@@ -965,85 +1177,36 @@ function renderCloaks(){
 
 renderCloaks();
 </script>
-<!-- SUMMER BREAK ANNOUNCEMENT -->
-<div id="summerPopup" class="overlay">
-  <div class="popup-box glass">
-    
-    <span class="close-x" id="summerClose">&times;</span>
-
-    <h2 style="
-      font-size:28px;
-      margin-bottom:15px;
-      background:linear-gradient(135deg,#4fd1ff,#b47cff);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    ">
-      🌴 Summer Break Notice
-    </h2>
-
-    <p style="
-      font-size:16px;
-      line-height:1.6;
-      color:rgba(255,255,255,0.9);
-    ">
-      Before you go on summer break...
-      <br><br>
-      Make sure to save these Pixel Portal backup links so that you can still enjoy your favorite games even when the main one gets blocked!
-    </p>
-
-    <div style="
-      margin-top:20px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    ">
-
-      <a href="https://zachristian7-dotcom.github.io/pixel-portal2" target="_blank">
-        <button class="action-btn" style="width:100%;">
-          zachristian7-dotcom.github.io/pixel-portal2
-        </button>
-      </a>
-
-      <a href="https://zachristian7-dotcom.github.io/pixel-portal3" target="_blank">
-        <button class="action-btn" style="width:100%;">
-          zachristian7-dotcom.github.io/pixel-portal3
-        </button>
-      </a>
-
-    </div>
-
-    <button class="close-btn" id="summerContinue">
-      Continue to Pixel Portal
-    </button>
-
-  </div>
-</div>
-
 <script>
-const summerPopup = document.getElementById("summerPopup");
-const summerClose = document.getElementById("summerClose");
-const summerContinue = document.getElementById("summerContinue");
+// 1. Select the button and the section
+const button = document.getElementById('hideBtn');
+const section = document.getElementById('targetSection');
 
-// Show popup on page load
-window.addEventListener("load", () => {
-  summerPopup.style.display = "flex";
+// 2. Listen for a click on the button
+button.addEventListener('click', () => {
+  // 3. Hide the section
+  section.style.display = 'none';
 });
 
-// Close popup
-summerClose.onclick = () => {
-  summerPopup.style.display = "none";
-};
+</script>
+<script>
+const recentToggle = document.getElementById("recentToggle");
+const recentContent = document.getElementById("recentContent");
 
-summerContinue.onclick = () => {
-  summerPopup.style.display = "none";
-};
+recentToggle.addEventListener("click", () => {
 
-// Close when clicking outside
-window.addEventListener("click", (e) => {
-  if (e.target === summerPopup) {
-    summerPopup.style.display = "none";
-  }
+    const expanded = recentContent.classList.toggle("expanded");
+
+    recentToggle.textContent = expanded
+        ? "▾ Recently Played"
+        : "▸ Recently Played";
+
 });
+
+function clearRecentGames() {
+    localStorage.removeItem("recentGames");
+    renderRecentlyPlayed();
+}
 </script>
 </body>
 </html>
